@@ -1,0 +1,27 @@
+#nfts {
+  background-color: lightblue;
+  width: 100%;
+  display: flex;
+
+  img {
+    width: 25%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #nfts {
+    flex-direction: column;
+    img {
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 970px) and (min-width: 700px) {
+  #nfts {
+    flex-wrap: wrap;
+    img {
+      width: 50%;
+    }
+  }
+}

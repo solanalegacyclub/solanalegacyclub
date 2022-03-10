@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+  <title>Legacy Club</title>
+
+  <meta name="description"
+    content="NFT collection of 5555 Skulls trying to wake up from there gaves and dominate the word, heading towards the Solana Blockchain." />
+  <meta name="keywords" content="Legacy Club" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <meta name="google-site-verification" content="R-c4AKOZMi7Wzo_6NdBndv20v0mBgB1VDKJ3W_3uoOc" />
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:url" content="https://twitter.com/SolLegacyClub" />
+  <meta name="twitter:title" content="Fishman's Laboratory" />
+  <meta name="twitter:description"
+    content="An NFT collection of 5555 Skulls trying to wake up from there gaves and dominate the word, heading towards the Solana Blockchain." />
+  <meta name="twitter:image" content="img/fish-meta-img.png">
+
+  <!-- Outfit google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Bootstrap Links -->
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+
+  <!-- FOnt awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/fontawesome.min.css"
+    integrity="sha512-8Vtie9oRR62i7vkmVUISvuwOeipGv8Jd+Sur/ORKDD5JiLgTGeBSkI3ISOhc730VGvA5VVQPwKIKlmi+zMZ71w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Slick slider -->
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+
+
+  <!-- <link rel="stylesheet" href="default" /> -->
+
+  <!-- Custom css -->
+  <!-- <link rel="stylesheet" href="styles.css"> -->
+
+  <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
+  <!-- <link rel="stylesheet" type="text/css" href="path/to/your/fonts/folder/fonts.min.css" /> -->
+  <link rel="shortcut icon" href="img/fml-meta-img.jpg" type="image/x-icon">
+  <link rel="stylesheet" href="css/stylesheet.min.css" />
+</head>
+
+<body onload="onLoad()">
+  <div id="loading"></div>
+
+  <main>
+    <!-- HEADER -->
+
+    <section class="hero_section">
+      <!-- <header></header> -->
+
+      <header>
+        <div class="custom-navbar-desktop">
+          <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"> <img src="img/fml-meta-img.jpg" alt="LOGO"> </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav d-flex justify-content-center me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#about">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#roadmap">Roadmap</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#creators">Team</a>
+                  </li>
+                </ul>
+                <div class="sm-links d-flex">
+                  <a class="sm-link-btn d-flex" href="https://discord.com/invite/E6f5J9kc">
+                    <div class="top-box discord">
+                      <svg width="25" height="19" viewBox="0 0 25 19" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M21.1634 1.57493C19.5427 0.833185 17.8323 0.304265 16.075 0.00141735C16.059 -0.00169545 16.0424 0.000348871 16.0276 0.00725566C16.0128 0.0141624 16.0006 0.0255747 15.9927 0.0398464C15.774 0.42933 15.5303 0.937217 15.3594 1.33813C13.4651 1.05124 11.5383 1.05124 9.64397 1.33813C9.45386 0.893908 9.2393 0.460489 9.00128 0.0398464C8.99307 0.0258943 8.98081 0.0147525 8.96612 0.00789156C8.95143 0.00103065 8.935 -0.00122676 8.91899 0.00141735C7.16159 0.303636 5.4511 0.832581 3.8306 1.57493C3.81688 1.58067 3.80525 1.59046 3.79727 1.60297C0.555693 6.43154 -0.332823 11.1407 0.103623 15.7906C0.104683 15.8021 0.108093 15.8133 0.113646 15.8235C0.119198 15.8337 0.126775 15.8426 0.135913 15.8498C2.02294 17.2438 4.13383 18.308 6.37844 18.9968C6.39426 19.0014 6.4111 19.001 6.42673 18.9958C6.44236 18.9906 6.45603 18.9808 6.46594 18.9677C6.94718 18.3134 7.37633 17.6227 7.74299 16.8967C7.74811 16.8868 7.75106 16.8759 7.75166 16.8648C7.75225 16.8536 7.75047 16.8425 7.74644 16.8321C7.7424 16.8217 7.7362 16.8123 7.72825 16.8044C7.72029 16.7966 7.71076 16.7905 7.70028 16.7866C7.02678 16.5296 6.37476 16.2198 5.75033 15.8602C5.73889 15.8536 5.72926 15.8442 5.72229 15.833C5.71533 15.8218 5.71126 15.8091 5.71043 15.7959C5.70961 15.7828 5.71206 15.7696 5.71757 15.7576C5.72307 15.7456 5.73147 15.7352 5.742 15.7272C5.8735 15.6291 6.0027 15.528 6.12949 15.4239C6.14058 15.415 6.15395 15.4092 6.16812 15.4074C6.18228 15.4056 6.19667 15.4077 6.2097 15.4136C10.3012 17.2758 14.7303 17.2758 18.7739 15.4136C18.7871 15.4075 18.8017 15.4053 18.816 15.4071C18.8304 15.4089 18.844 15.4148 18.8552 15.4239C18.9802 15.5257 19.1114 15.6296 19.2437 15.7272C19.2541 15.7351 19.2624 15.7453 19.268 15.7571C19.2735 15.7689 19.2761 15.7818 19.2755 15.7948C19.2749 15.8078 19.2711 15.8205 19.2645 15.8317C19.2578 15.8429 19.2486 15.8523 19.2374 15.8591C18.6144 16.2222 17.9618 16.5321 17.2865 16.7856C17.2759 16.7896 17.2664 16.7958 17.2584 16.8037C17.2505 16.8116 17.2443 16.8212 17.2402 16.8316C17.2362 16.8421 17.2344 16.8533 17.2351 16.8645C17.2357 16.8758 17.2386 16.8867 17.2438 16.8967C17.6187 17.6217 18.0479 18.3113 18.5198 18.9667C18.5295 18.98 18.5431 18.99 18.5588 18.9952C18.5745 19.0005 18.5915 19.0006 18.6073 18.9958C20.8556 18.3091 22.9699 17.2448 24.8592 15.8487C24.8684 15.8422 24.8761 15.8339 24.8818 15.8242C24.8876 15.8146 24.8912 15.8038 24.8925 15.7926C25.4133 10.4157 24.0196 5.74501 21.1957 1.60505C21.1891 1.59109 21.1776 1.58001 21.1634 1.57389V1.57493ZM8.35443 12.9582C7.12217 12.9582 6.10762 11.8313 6.10762 10.4458C6.10762 9.06133 7.10342 7.93339 8.35443 7.93339C9.61481 7.93339 10.621 9.07172 10.6012 10.4469C10.6012 11.8313 9.60543 12.9582 8.35443 12.9582ZM16.6615 12.9582C15.4292 12.9582 14.4147 11.8313 14.4147 10.4458C14.4147 9.06133 15.4094 7.93339 16.6615 7.93339C17.9219 7.93339 18.9281 9.07172 18.9083 10.4469C18.9083 11.8313 17.9229 12.9582 16.6615 12.9582Z"
+                          fill="white" />
+                      </svg>
+                    </div>
+                    <div class="bottom-box"></div>
+                  </a>
+
+                  <a class="sm-link-btn d-flex" href="https://twitter.com/SolLegacyClub">
+                    <div class="top-box twitter">
+                      <svg width="24" height="19" viewBox="0 0 24 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M23.2045 2.2509C22.334 2.63414 21.4119 2.88711 20.4678 3.00168C21.4618 2.4042 22.2061 1.46722 22.5632 0.363771C21.6419 0.901427 20.6208 1.2928 19.5339 1.51077C18.8168 0.743937 17.8665 0.235335 16.8307 0.0639439C15.7949 -0.107447 14.7315 0.0679632 13.8056 0.562937C12.8797 1.05791 12.1431 1.84475 11.7103 2.80127C11.2775 3.75778 11.1726 4.83045 11.4119 5.85271C7.44969 5.66574 3.93991 3.76215 1.58875 0.886896C1.16133 1.61328 0.938393 2.44176 0.943562 3.28455C0.943562 4.94111 1.78637 6.39715 3.06319 7.25255C2.30646 7.22846 1.56644 7.02386 0.904813 6.6558V6.71393C0.904383 7.81481 1.28482 8.88193 1.98158 9.73425C2.67835 10.5866 3.64852 11.1716 4.7275 11.3901C4.02835 11.5774 3.29609 11.6056 2.58462 11.4724C2.89087 12.4199 3.48524 13.2481 4.28479 13.8415C5.08435 14.4349 6.04922 14.7639 7.04475 14.7826C5.35867 16.1059 3.27677 16.8241 1.13344 16.8219C0.755625 16.8219 0.378781 16.7996 0 16.757C2.18522 18.1561 4.72606 18.8989 7.32084 18.8969C16.0909 18.8969 20.8814 11.6352 20.8814 5.34896C20.8814 5.14552 20.8814 4.94208 20.8669 4.73865C21.8027 4.06523 22.6099 3.22916 23.25 2.27027L23.2045 2.2509Z"
+                          fill="white" />
+                      </svg>
+                    </div>
+                    <div class="bottom-box"></div>
+                  </a>
+
+                  <a class="sm-link-btn d-flex" href="https://www.instagram.com/sollegacyclub/">
+                    <div class="top-box instagram">
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M11.625 0C8.46688 0 8.07259 0.0145312 6.83259 0.06975C5.59453 0.127875 4.75172 0.322594 4.01062 0.610312C3.24628 0.90675 2.59722 1.30491 1.95106 1.95106C1.30491 2.59722 0.905781 3.24531 0.610312 4.01062C0.322594 4.75172 0.126906 5.59453 0.06975 6.83259C0.011625 8.07259 0 8.46688 0 11.625C0 14.7831 0.0145312 15.1774 0.06975 16.4174C0.127875 17.6545 0.322594 18.4983 0.610312 19.2394C0.902189 20.0152 1.35973 20.718 1.95106 21.2989C2.53161 21.8907 3.23456 22.3483 4.01062 22.6397C4.75269 22.9264 5.5955 23.1231 6.83259 23.1802C8.07259 23.2384 8.46688 23.25 11.625 23.25C14.7831 23.25 15.1774 23.2355 16.4174 23.1802C17.6545 23.1221 18.4983 22.9264 19.2394 22.6397C20.015 22.3474 20.7178 21.89 21.2989 21.2989C21.8909 20.7185 22.3485 20.0156 22.6397 19.2394C22.9264 18.4983 23.1231 17.6545 23.1802 16.4174C23.2384 15.1774 23.25 14.7831 23.25 11.625C23.25 8.46688 23.2355 8.07259 23.1802 6.83259C23.1221 5.5955 22.9264 4.75075 22.6397 4.01062C22.3477 3.23487 21.8901 2.53205 21.2989 1.95106C20.7188 1.35881 20.0157 0.901121 19.2394 0.610312C18.4983 0.322594 17.6545 0.126906 16.4174 0.06975C15.1774 0.011625 14.7831 0 11.625 0ZM11.625 2.0925C14.7279 2.0925 15.098 2.108 16.3234 2.16128C17.4569 2.21456 18.072 2.4025 18.4808 2.56331C19.0253 2.77353 19.4108 3.02541 19.8197 3.43131C20.2256 3.83819 20.4774 4.22472 20.6877 4.76916C20.8465 5.17797 21.0364 5.79313 21.0877 6.92656C21.143 8.153 21.1556 8.52113 21.1556 11.625C21.1556 14.7289 21.141 15.098 21.0839 16.3234C21.0248 17.4569 20.8359 18.072 20.676 18.4808C20.4869 18.9853 20.1897 19.4423 19.8051 19.8197C19.4294 20.2045 18.9727 20.501 18.4682 20.6877C18.0614 20.8465 17.4365 21.0364 16.3031 21.0877C15.0689 21.143 14.7056 21.1556 11.5959 21.1556C8.48528 21.1556 8.122 21.141 6.88878 21.0839C5.75438 21.0248 5.12953 20.8359 4.72266 20.676C4.21784 20.4893 3.76134 20.1916 3.38675 19.8051C2.99788 19.4319 2.69963 18.9746 2.51487 18.4682C2.35503 18.0614 2.16709 17.4365 2.108 16.3031C2.06441 15.0825 2.04891 14.7056 2.04891 11.6105C2.04891 8.51434 2.06441 8.13653 2.108 6.90138C2.16709 5.76794 2.35503 5.14406 2.51487 4.73719C2.71831 4.185 2.97891 3.80719 3.38675 3.39934C3.79266 2.99344 4.17144 2.73188 4.72266 2.52941C5.12953 2.36859 5.74081 2.17969 6.87425 2.12156C8.10941 2.07797 8.47269 2.06344 11.5814 2.06344L11.625 2.0925V2.0925ZM11.625 5.65556C10.8411 5.65556 10.0648 5.80997 9.3406 6.10996C8.61635 6.40995 7.95828 6.84966 7.40397 7.40397C6.84966 7.95828 6.40995 8.61635 6.10996 9.3406C5.80997 10.0648 5.65556 10.8411 5.65556 11.625C5.65556 12.4089 5.80997 13.1852 6.10996 13.9094C6.40995 14.6337 6.84966 15.2917 7.40397 15.846C7.95828 16.4003 8.61635 16.84 9.3406 17.14C10.0648 17.44 10.8411 17.5944 11.625 17.5944C13.2082 17.5944 14.7265 16.9655 15.846 15.846C16.9655 14.7265 17.5944 13.2082 17.5944 11.625C17.5944 10.0418 16.9655 8.52346 15.846 7.40397C14.7265 6.28448 13.2082 5.65556 11.625 5.65556V5.65556ZM11.625 15.5C9.48406 15.5 7.75 13.7659 7.75 11.625C7.75 9.48406 9.48406 7.75 11.625 7.75C13.7659 7.75 15.5 9.48406 15.5 11.625C15.5 13.7659 13.7659 15.5 11.625 15.5ZM19.2258 5.42016C19.2124 5.78114 19.0595 6.12285 18.7994 6.37347C18.5392 6.6241 18.192 6.76413 17.8308 6.76413C17.4696 6.76413 17.1224 6.6241 16.8623 6.37347C16.6021 6.12285 16.4493 5.78114 16.4358 5.42016C16.4358 5.05018 16.5828 4.69536 16.8444 4.43374C17.106 4.17213 17.4608 4.02516 17.8308 4.02516C18.2008 4.02516 18.5556 4.17213 18.8172 4.43374C19.0788 4.69536 19.2258 5.05018 19.2258 5.42016V5.42016Z"
+                          fill="white" />
+                      </svg>
+                    </div>
+                    <div class="bottom-box"></div>
+                  </a>
+
+                  <!--<a class="sm-link-btn d-flex" href="https://discord.com/invite/E6f5J9kc">
+                    <div class="top-box opensea">
+                      <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M0.8639 11.4938L0.936506 11.3618L5.31538 3.44007C5.37938 3.32405 5.52982 3.33608 5.57826 3.46204C6.30978 5.35803 6.94104 7.71596 6.64531 9.18391C6.51906 9.78787 6.17317 10.6059 5.78404 11.3618C5.73391 11.4719 5.67855 11.5799 5.61975 11.6839C5.5921 11.7318 5.54538 11.7599 5.49522 11.7599H0.991866C0.870783 11.7599 0.799898 11.6079 0.8639 11.4938Z"
+                          fill="white" />
+                        <path
+                          d="M21 12.8856V14.056C21 14.1232 20.9615 14.1829 20.9055 14.2091C20.5625 14.3659 19.3882 14.9408 18.9 15.6651C17.654 17.5149 16.702 20.16 14.574 20.16H5.69623C2.54975 20.16 0 17.4309 0 14.0635V13.9552C0 13.8656 0.0682465 13.7928 0.152239 13.7928H5.10124C5.19924 13.7928 5.27101 13.8899 5.26226 13.9925C5.22725 14.336 5.28675 14.6869 5.43899 15.0061C5.73298 15.6427 6.34202 16.0403 6.99999 16.0403H9.45V14H7.028C6.90373 14 6.83026 13.8469 6.90199 13.7387C6.92826 13.6957 6.95801 13.6509 6.9895 13.6005C7.21873 13.2533 7.546 12.7139 7.87148 12.0997C8.09375 11.6853 8.30901 11.2429 8.48225 10.7987C8.51726 10.7184 8.54524 10.6363 8.57325 10.556C8.62049 10.4141 8.6695 10.2816 8.70448 10.1491C8.73949 10.0371 8.7675 9.91947 8.79551 9.80933C8.87776 9.43227 8.91274 9.0328 8.91274 8.61839C8.91274 8.456 8.90574 8.28614 8.89173 8.12372C8.88476 7.94639 8.86376 7.76906 8.84275 7.59173C8.82874 7.43492 8.80251 7.28 8.7745 7.11761C8.73949 6.88053 8.69051 6.64535 8.63449 6.40827L8.61526 6.31867C8.57325 6.15629 8.53823 6.00133 8.48925 5.83894C8.35098 5.32933 8.19174 4.8328 8.02376 4.368C7.96251 4.1832 7.89249 4.00588 7.8225 3.82855C7.71924 3.56159 7.61424 3.31894 7.51798 3.08933C7.46901 2.9848 7.42699 2.88959 7.38501 2.79253C7.33774 2.68239 7.28876 2.57229 7.23974 2.46771C7.20476 2.38745 7.16449 2.3128 7.13648 2.23814L6.83727 1.64827C6.79525 1.568 6.86524 1.4728 6.94749 1.49706L8.82 2.03841H8.82526C8.82874 2.03841 8.83049 2.04027 8.83226 2.04027L9.07898 2.11306L9.35026 2.19518L9.45 2.22506V1.03788C9.45 0.464796 9.88048 0 10.4125 0C10.6785 0 10.92 0.115714 11.0932 0.304265C11.2665 0.492816 11.375 0.750408 11.375 1.03788V2.8L11.5745 2.85971C11.5902 2.86533 11.606 2.8728 11.62 2.88398C11.669 2.92318 11.739 2.98108 11.8282 3.05198C11.8982 3.11173 11.9735 3.18453 12.0645 3.25918C12.2448 3.41414 12.46 3.61388 12.6963 3.84345C12.7592 3.90135 12.8205 3.96106 12.8765 4.02082C13.181 4.32318 13.5223 4.67788 13.8477 5.06988C13.9387 5.17998 14.028 5.29198 14.119 5.40959C14.21 5.52906 14.3062 5.64667 14.3903 5.76429C14.5005 5.92106 14.6195 6.08345 14.7228 6.25335C14.7717 6.33361 14.8278 6.41573 14.875 6.496C15.008 6.71067 15.1253 6.93282 15.2373 7.15492C15.2845 7.25759 15.3335 7.36959 15.3755 7.47973C15.4997 7.77653 15.5978 8.07894 15.6607 8.38135C15.68 8.44667 15.694 8.51761 15.701 8.58108V8.59598C15.722 8.68561 15.729 8.78082 15.736 8.87788C15.764 9.18772 15.75 9.49759 15.687 9.80933C15.6607 9.94188 15.6257 10.0669 15.5838 10.1995C15.5417 10.3264 15.4997 10.4589 15.4455 10.584C15.3405 10.8434 15.2163 11.1029 15.0692 11.3456C15.022 11.4352 14.966 11.5304 14.91 11.62C14.8488 11.7152 14.7857 11.8048 14.7298 11.8926C14.6528 12.0046 14.5705 12.1221 14.4865 12.2267C14.4112 12.3368 14.3342 12.4469 14.2502 12.544C14.133 12.6915 14.021 12.8315 13.9038 12.9659C13.8337 13.0536 13.7585 13.1432 13.6815 13.2235C13.6062 13.3131 13.5293 13.3933 13.4592 13.468C13.342 13.5931 13.244 13.6901 13.1618 13.7704L12.9692 13.9589C12.9412 13.9851 12.9045 14 12.866 14H11.375V16.0403H13.251C13.671 16.0403 14.07 15.8816 14.392 15.5904C14.5022 15.4877 14.9835 15.0435 15.5523 14.3733C15.5715 14.3509 15.596 14.3341 15.624 14.3267L20.8057 12.7288C20.902 12.6989 21 12.7773 21 12.8856Z"
+                          fill="white" />
+                      </svg>
+                    </div>
+                    <div class="bottom-box"></div>
+                  </a> -->
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+
+        <div class="custom-navbar-mobile">
+          <div class="brand">
+            <a class="navbar-brand" href="#"> <img src="img/FML logo.png" alt="LOGO"> </a </div>
+            <input class="menu-icon" type="checkbox" id="menu-icon" name="menu-icon" />
+            <label for="menu-icon"></label>
+            <nav class="nav">
+              <ul class="pt-5">
+                <li><a href="#about" onclick="closeMenu()">About</a></li>
+                <li><a href="#roadmap" onclick="closeMenu()">Roadmap</a></li>
+                <li><a href="#creators" onclick="closeMenu()">Team</a></li>
+                <li><a href="#footer" onclick="closeMenu()">Contact</a></li>
+              </ul>
+            </nav>
+          </div>
+      </header>
+
+      <video src="img/bg.mp4" playsinline autoplay loop muted></video>
+
+      <div class="hero_section_bottom">
+        <div class="container-fluid hero_section_bottom_wrapper">
+          <div class="right_text">
+            <div class="hero_text_wrapper">
+              <!-- <h1 class="hero_text">fishman's laboratory</h1>
+                <h1 class="hero_text hero_text_stroke">fishman's laboratory</h1> -->
+              <img src="img/hero-text.png" alt="" class="hero-text" />
+            </div>
+
+            <h4 class="tagline">We’re still building up...</h4>
+          </div>
+
+          <div class="left-button">
+            <button class="cta-btn" data-btn-alt="Soon"></button>
+            <div class="bottom-button-box"></div>
+            <!-- <p class="cta-active">To the moon...</p> -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- <div class="about-text-bg">
+        <div class="line1">
+          <h1>Metaverse Metaverse Metaverse</h1>
+        </div>
+        <div class="line2">
+          <h1>Metaverse Metaverse Metaverse</h1>
+        </div>
+      </div> -->
+
+    <section class="about-bg" id="about" style="overflow-x: hidden">
+      <!-- <h1 class="metaverse_bg">METAVERSE METAVERSE METAVERSE</h1> -->
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-4 make-center extra-video-wrapper">
+            <div class="hero_section_bottom_wrapper" data-aos="fade-right" data-aos-delay="720" data-ease="ease-in">
+              <img class="NFT TMYK" src="img/Head.png" alt="" />
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-1"></div>
+          <div class="col-sm-12 col-md-7 about-text">
+            <h2 class="about-heading">About</h2>
+            <p class="about-para">
+              <span class="">All you need to know !!!<br /><br /></span>
+
+              An NFT collection of 333 Skulls trying to wake up from there gaves and dominate the word, heading towards the Solana Blockchain.
+              <br /><br />
+
+              Legacy Club is a project brought to you, by a team of Architects, Designers and NFT enthusiasts
+              breaching the gates of this massive Web3 universe ...or we shall say METAVERSE !!
+              <br />
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="formula">
+      <div class="number-card-1 d-flex flex-column align-items-center">
+        <h1>150</h1>
+        <h2 class="num-des">Presale</h2>
+      </div>
+      <div class="symbol">+</div>
+      <div class="number-card-1 d-flex flex-column align-items-center">
+        <h1>183</h1>
+        <h2 class="num-des">Public mint</h2>
+      </div>
+      <div class="symbol">=</div>
+      <div class="number-card-1 d-flex flex-column align-items-center">
+        <h1>333</h1>
+        <!-- <h1 class="js-odoo">12121</h1> -->
+        <!--<h1 class="js_animation odometer" data-animation-value="3330" data-animation-duration="50"
+          data-animation-easing="easeOutCubic" data-animation-delay-start="100"></h1> -->
+        <h2 class="num-des total-supply">NFTs</h2>
+      </div>
+    </section>
+
+    <section class="roadmap" id="roadmap">
+      <div class="container">
+        <!-- <hr class="hr-1" /> -->
+        <div class="row">
+          <div class="col-lg-6 d-flex justify-content-center">
+            <div class="phase-card-row">
+              <h1 class="roadmap-heading mt-5 pt-5">Roadmap</h1>
+              <div class="phase-card">
+                <p class="phase" style="background: #ffad5b">Phase I</p>
+                <h1>Origin</h1>
+                <div class="phase-paragraph">
+                  <ul>
+                    <li>Gathering finfrens for deep dives and new adventures. Building a strong Community.</li>
+                    <li>
+                      Presale (Whitelist). <br />
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="phase-card">
+                <p class="phase" style="background: #00ea7a">Phase II</p>
+                <h1>Gratitude</h1>
+                <div class="phase-paragraph">
+                  <ul>
+                    <li>Free Mint Whitelist sale.</li>
+                    <li>Public sale</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="phase-card">
+                <p class="phase" style="background: #8a78f8">Phase III</p>
+                <h1>Initiation</h1>
+                <div class="phase-paragraph">
+                  <ul>
+                    <li>Auction of the 1/1 NFT with a special gift.</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="phase-card">
+                <p class="phase" style="background: #ef748a">Phase IV</p>
+                <h1>Execution</h1>
+                <div class="phase-paragraph">
+                  <!-- Gradient on card -->
+
+                  <ul>
+                    <li>airdrop random NFTs (all projects on Solana) to holders every week!!!</li>
+                    <li>
+                      Into the METAVERSE:
+                      <ul>
+                        <li>Launch the V2 SLC collection with amount of 5555 NFT, 333 of it will be airdroped to our NFT holders!! </li>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>Having a land in Metaverse!</li>
+                  </ul>
+                </div>
+                <!-- <div class="execution-blur"></div> -->
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 side-img-container">
+            <!-- <img class="side-img" src="img/roadmap/side.png" alt="" /> -->
+            <video src="img/Robot animation.mp4" playsinline muted autoplay loop class="side-img"></video>
+          </div>
+        </div>
+      </div>
+
+      <!-- <hr class="hr-2" /> -->
+
+      <!-- <div class="biohazard">
+        <div class="img-container">
+          <img src="img/roadmap/roadmap-main.png" id="pyramid-img" alt="" />
+        </div>
+        <div class="btn">
+          <img src="img/roadmap/composiiton.png" alt="" id="biohazard-btn" />
+          <p>PRESS AND HOLD TO REVEAL</p>
+        </div>
+      </div>
+    </section> -->
+    </section>
+
+    <section id="nfts">
+      <img src="img/nfts/nft-01.png" alt="Fishma's nft images" />
+      <img src="img/nfts/nft-02.png" alt="Fishma's nft images" />
+      <img src="img/nfts/nft-03.png" alt="Fishma's nft images" />
+      <img src="img/nfts/nft-07.png" alt="Fishma's nft images" />
+      <img src="img/nfts/nft-04.png" alt="Fishma's nft images" />
+      <img src="img/nfts/nft-05.png" alt="Fishma's nft images" />
+      <img src="img/nfts/nft-06.png" alt="Fishma's nft images" />
+    </section>
+
+    <section class="faq py-5">
+      <h2 class="text-center mb-5 fw-bold">FAQs</h2>
+      <div class="faq-list-container">
+        <div class="container">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                What is the total supply?
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+
+                The total supply is 333 NFT
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingSix">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                NFTs rarety?
+              </button>
+            </h2>
+            <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+
+                100 rare, 227 super rare, 6 legendary!
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Which blockchain?
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+
+                SOL on Solana Blockchain
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                What will be the mint price?
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                TGE :)
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                Wen mint?
+              </button>
+            </h2>
+            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                Soon
+              </div>
+            </div>
+          </div>
+
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingFive">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                FM and WL perks?
+              </button>
+            </h2>
+            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+
+                20 - Free Mint can mint 1 Skulls <br />130 - WLs can mint 2
+                Skulls.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="creators" class="d-flex justify-content-center flex-column align-items-center">
+      <img src="img/creators/creators.png" alt="creators text" class="creators-text" />
+      <!-- <h2 class="text-center mt-5">creators</h2> -->
+      <div class="user-card-container">
+        <div class="user-card">
+          <img class="profile" src="img/creators/chappapa.png" alt="" />
+          <p class="name">Samurai</p>
+          <p class="rolse">Founder</p>
+          <p class="des">Community Lead, Architect <br />
+            3D Artist, Web3 Nerd</p>
+          <div class="d-flex">
+            <a href="https://twitter.com/samurai_101_">
+              <img src="img/header/twitter-white.svg" alt="" />
+            </a>
+            <!-- <a href="">
+              <img src="img/creators/instagram.png" alt="" />
+            </a>
+            <a href="">
+              <img src="img/creators/linktree.png" alt="" />
+            </a> -->
+          </div>
+        </div>
+        <div class="user-card">
+          <img class="profile" src="img/creators/orange.png" alt="" />
+          <p class="name">Zainbk</p>
+          <p class="role">Co-Founder</p>
+          <p class="des">Design & Technical Lead, Architect <br />
+            3D Artist, AR Everything</p>
+          <div class="d-flex">
+            <a href="https://twitter.com/zainbkk">
+              <img src="img/header/twitter-white.svg" alt="" />
+            </a>
+            <!-- <a href="">
+              <img src="img/creators/instagram.png" alt="" />
+            </a>
+            <a href="">
+              <img src="img/creators/linktree.png" alt="" />
+            </a> -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer id="footer">
+      <h2>Get in touch.</h2>
+      <a class="email" href="mailto:contact@fishmanslaboratory.io"></a>
+
+      <div class="d-flex footer-bottom">
+        <p>2022 Legacy Club.</p>
+        <div class="sm-links-footer d-flex mt-0" style="margin-top: 0 !important">
+          <a class="sm-link-btn footer-btn d-flex no-mg" href="https://discord.com/invite/E6f5J9kc">
+            <div class="top-box discord">
+              <svg width="25" height="19" viewBox="0 0 25 19" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M21.1634 1.57493C19.5427 0.833185 17.8323 0.304265 16.075 0.00141735C16.059 -0.00169545 16.0424 0.000348871 16.0276 0.00725566C16.0128 0.0141624 16.0006 0.0255747 15.9927 0.0398464C15.774 0.42933 15.5303 0.937217 15.3594 1.33813C13.4651 1.05124 11.5383 1.05124 9.64397 1.33813C9.45386 0.893908 9.2393 0.460489 9.00128 0.0398464C8.99307 0.0258943 8.98081 0.0147525 8.96612 0.00789156C8.95143 0.00103065 8.935 -0.00122676 8.91899 0.00141735C7.16159 0.303636 5.4511 0.832581 3.8306 1.57493C3.81688 1.58067 3.80525 1.59046 3.79727 1.60297C0.555693 6.43154 -0.332823 11.1407 0.103623 15.7906C0.104683 15.8021 0.108093 15.8133 0.113646 15.8235C0.119198 15.8337 0.126775 15.8426 0.135913 15.8498C2.02294 17.2438 4.13383 18.308 6.37844 18.9968C6.39426 19.0014 6.4111 19.001 6.42673 18.9958C6.44236 18.9906 6.45603 18.9808 6.46594 18.9677C6.94718 18.3134 7.37633 17.6227 7.74299 16.8967C7.74811 16.8868 7.75106 16.8759 7.75166 16.8648C7.75225 16.8536 7.75047 16.8425 7.74644 16.8321C7.7424 16.8217 7.7362 16.8123 7.72825 16.8044C7.72029 16.7966 7.71076 16.7905 7.70028 16.7866C7.02678 16.5296 6.37476 16.2198 5.75033 15.8602C5.73889 15.8536 5.72926 15.8442 5.72229 15.833C5.71533 15.8218 5.71126 15.8091 5.71043 15.7959C5.70961 15.7828 5.71206 15.7696 5.71757 15.7576C5.72307 15.7456 5.73147 15.7352 5.742 15.7272C5.8735 15.6291 6.0027 15.528 6.12949 15.4239C6.14058 15.415 6.15395 15.4092 6.16812 15.4074C6.18228 15.4056 6.19667 15.4077 6.2097 15.4136C10.3012 17.2758 14.7303 17.2758 18.7739 15.4136C18.7871 15.4075 18.8017 15.4053 18.816 15.4071C18.8304 15.4089 18.844 15.4148 18.8552 15.4239C18.9802 15.5257 19.1114 15.6296 19.2437 15.7272C19.2541 15.7351 19.2624 15.7453 19.268 15.7571C19.2735 15.7689 19.2761 15.7818 19.2755 15.7948C19.2749 15.8078 19.2711 15.8205 19.2645 15.8317C19.2578 15.8429 19.2486 15.8523 19.2374 15.8591C18.6144 16.2222 17.9618 16.5321 17.2865 16.7856C17.2759 16.7896 17.2664 16.7958 17.2584 16.8037C17.2505 16.8116 17.2443 16.8212 17.2402 16.8316C17.2362 16.8421 17.2344 16.8533 17.2351 16.8645C17.2357 16.8758 17.2386 16.8867 17.2438 16.8967C17.6187 17.6217 18.0479 18.3113 18.5198 18.9667C18.5295 18.98 18.5431 18.99 18.5588 18.9952C18.5745 19.0005 18.5915 19.0006 18.6073 18.9958C20.8556 18.3091 22.9699 17.2448 24.8592 15.8487C24.8684 15.8422 24.8761 15.8339 24.8818 15.8242C24.8876 15.8146 24.8912 15.8038 24.8925 15.7926C25.4133 10.4157 24.0196 5.74501 21.1957 1.60505C21.1891 1.59109 21.1776 1.58001 21.1634 1.57389V1.57493ZM8.35443 12.9582C7.12217 12.9582 6.10762 11.8313 6.10762 10.4458C6.10762 9.06133 7.10342 7.93339 8.35443 7.93339C9.61481 7.93339 10.621 9.07172 10.6012 10.4469C10.6012 11.8313 9.60543 12.9582 8.35443 12.9582ZM16.6615 12.9582C15.4292 12.9582 14.4147 11.8313 14.4147 10.4458C14.4147 9.06133 15.4094 7.93339 16.6615 7.93339C17.9219 7.93339 18.9281 9.07172 18.9083 10.4469C18.9083 11.8313 17.9229 12.9582 16.6615 12.9582Z"
+                  fill="white" />
+              </svg>
+            </div>
+            <div class="bottom-box"></div>
+          </a>-->
+
+          <a class="sm-link-btn footer-btn d-flex" href="https://twitter.com/SolLegacyClub">
+            <div class="top-box twitter">
+              <svg width="24" height="19" viewBox="0 0 24 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M23.2045 2.2509C22.334 2.63414 21.4119 2.88711 20.4678 3.00168C21.4618 2.4042 22.2061 1.46722 22.5632 0.363771C21.6419 0.901427 20.6208 1.2928 19.5339 1.51077C18.8168 0.743937 17.8665 0.235335 16.8307 0.0639439C15.7949 -0.107447 14.7315 0.0679632 13.8056 0.562937C12.8797 1.05791 12.1431 1.84475 11.7103 2.80127C11.2775 3.75778 11.1726 4.83045 11.4119 5.85271C7.44969 5.66574 3.93991 3.76215 1.58875 0.886896C1.16133 1.61328 0.938393 2.44176 0.943562 3.28455C0.943562 4.94111 1.78637 6.39715 3.06319 7.25255C2.30646 7.22846 1.56644 7.02386 0.904813 6.6558V6.71393C0.904383 7.81481 1.28482 8.88193 1.98158 9.73425C2.67835 10.5866 3.64852 11.1716 4.7275 11.3901C4.02835 11.5774 3.29609 11.6056 2.58462 11.4724C2.89087 12.4199 3.48524 13.2481 4.28479 13.8415C5.08435 14.4349 6.04922 14.7639 7.04475 14.7826C5.35867 16.1059 3.27677 16.8241 1.13344 16.8219C0.755625 16.8219 0.378781 16.7996 0 16.757C2.18522 18.1561 4.72606 18.8989 7.32084 18.8969C16.0909 18.8969 20.8814 11.6352 20.8814 5.34896C20.8814 5.14552 20.8814 4.94208 20.8669 4.73865C21.8027 4.06523 22.6099 3.22916 23.25 2.27027L23.2045 2.2509Z"
+                  fill="white" />
+              </svg>
+            </div>
+            <div class="bottom-box"></div>
+          </a>
+
+          <a class="sm-link-btn footer-btn d-flex" href="https://www.instagram.com/sollegacyclub/">
+            <div class="top-box instagram">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M11.625 0C8.46688 0 8.07259 0.0145312 6.83259 0.06975C5.59453 0.127875 4.75172 0.322594 4.01062 0.610312C3.24628 0.90675 2.59722 1.30491 1.95106 1.95106C1.30491 2.59722 0.905781 3.24531 0.610312 4.01062C0.322594 4.75172 0.126906 5.59453 0.06975 6.83259C0.011625 8.07259 0 8.46688 0 11.625C0 14.7831 0.0145312 15.1774 0.06975 16.4174C0.127875 17.6545 0.322594 18.4983 0.610312 19.2394C0.902189 20.0152 1.35973 20.718 1.95106 21.2989C2.53161 21.8907 3.23456 22.3483 4.01062 22.6397C4.75269 22.9264 5.5955 23.1231 6.83259 23.1802C8.07259 23.2384 8.46688 23.25 11.625 23.25C14.7831 23.25 15.1774 23.2355 16.4174 23.1802C17.6545 23.1221 18.4983 22.9264 19.2394 22.6397C20.015 22.3474 20.7178 21.89 21.2989 21.2989C21.8909 20.7185 22.3485 20.0156 22.6397 19.2394C22.9264 18.4983 23.1231 17.6545 23.1802 16.4174C23.2384 15.1774 23.25 14.7831 23.25 11.625C23.25 8.46688 23.2355 8.07259 23.1802 6.83259C23.1221 5.5955 22.9264 4.75075 22.6397 4.01062C22.3477 3.23487 21.8901 2.53205 21.2989 1.95106C20.7188 1.35881 20.0157 0.901121 19.2394 0.610312C18.4983 0.322594 17.6545 0.126906 16.4174 0.06975C15.1774 0.011625 14.7831 0 11.625 0ZM11.625 2.0925C14.7279 2.0925 15.098 2.108 16.3234 2.16128C17.4569 2.21456 18.072 2.4025 18.4808 2.56331C19.0253 2.77353 19.4108 3.02541 19.8197 3.43131C20.2256 3.83819 20.4774 4.22472 20.6877 4.76916C20.8465 5.17797 21.0364 5.79313 21.0877 6.92656C21.143 8.153 21.1556 8.52113 21.1556 11.625C21.1556 14.7289 21.141 15.098 21.0839 16.3234C21.0248 17.4569 20.8359 18.072 20.676 18.4808C20.4869 18.9853 20.1897 19.4423 19.8051 19.8197C19.4294 20.2045 18.9727 20.501 18.4682 20.6877C18.0614 20.8465 17.4365 21.0364 16.3031 21.0877C15.0689 21.143 14.7056 21.1556 11.5959 21.1556C8.48528 21.1556 8.122 21.141 6.88878 21.0839C5.75438 21.0248 5.12953 20.8359 4.72266 20.676C4.21784 20.4893 3.76134 20.1916 3.38675 19.8051C2.99788 19.4319 2.69963 18.9746 2.51487 18.4682C2.35503 18.0614 2.16709 17.4365 2.108 16.3031C2.06441 15.0825 2.04891 14.7056 2.04891 11.6105C2.04891 8.51434 2.06441 8.13653 2.108 6.90138C2.16709 5.76794 2.35503 5.14406 2.51487 4.73719C2.71831 4.185 2.97891 3.80719 3.38675 3.39934C3.79266 2.99344 4.17144 2.73188 4.72266 2.52941C5.12953 2.36859 5.74081 2.17969 6.87425 2.12156C8.10941 2.07797 8.47269 2.06344 11.5814 2.06344L11.625 2.0925V2.0925ZM11.625 5.65556C10.8411 5.65556 10.0648 5.80997 9.3406 6.10996C8.61635 6.40995 7.95828 6.84966 7.40397 7.40397C6.84966 7.95828 6.40995 8.61635 6.10996 9.3406C5.80997 10.0648 5.65556 10.8411 5.65556 11.625C5.65556 12.4089 5.80997 13.1852 6.10996 13.9094C6.40995 14.6337 6.84966 15.2917 7.40397 15.846C7.95828 16.4003 8.61635 16.84 9.3406 17.14C10.0648 17.44 10.8411 17.5944 11.625 17.5944C13.2082 17.5944 14.7265 16.9655 15.846 15.846C16.9655 14.7265 17.5944 13.2082 17.5944 11.625C17.5944 10.0418 16.9655 8.52346 15.846 7.40397C14.7265 6.28448 13.2082 5.65556 11.625 5.65556V5.65556ZM11.625 15.5C9.48406 15.5 7.75 13.7659 7.75 11.625C7.75 9.48406 9.48406 7.75 11.625 7.75C13.7659 7.75 15.5 9.48406 15.5 11.625C15.5 13.7659 13.7659 15.5 11.625 15.5ZM19.2258 5.42016C19.2124 5.78114 19.0595 6.12285 18.7994 6.37347C18.5392 6.6241 18.192 6.76413 17.8308 6.76413C17.4696 6.76413 17.1224 6.6241 16.8623 6.37347C16.6021 6.12285 16.4493 5.78114 16.4358 5.42016C16.4358 5.05018 16.5828 4.69536 16.8444 4.43374C17.106 4.17213 17.4608 4.02516 17.8308 4.02516C18.2008 4.02516 18.5556 4.17213 18.8172 4.43374C19.0788 4.69536 19.2258 5.05018 19.2258 5.42016V5.42016Z"
+                  fill="white" />
+              </svg>
+            </div>
+            <div class="bottom-box"></div>
+          </a>
+
+          <!-- <a class="sm-link-btn d-flex footer-btn" href="https://discord.com/invite/E6f5J9kc">
+            <div class="top-box opensea">
+              <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M0.8639 11.4938L0.936506 11.3618L5.31538 3.44007C5.37938 3.32405 5.52982 3.33608 5.57826 3.46204C6.30978 5.35803 6.94104 7.71596 6.64531 9.18391C6.51906 9.78787 6.17317 10.6059 5.78404 11.3618C5.73391 11.4719 5.67855 11.5799 5.61975 11.6839C5.5921 11.7318 5.54538 11.7599 5.49522 11.7599H0.991866C0.870783 11.7599 0.799898 11.6079 0.8639 11.4938Z"
+                  fill="white" />
+                <path
+                  d="M21 12.8856V14.056C21 14.1232 20.9615 14.1829 20.9055 14.2091C20.5625 14.3659 19.3882 14.9408 18.9 15.6651C17.654 17.5149 16.702 20.16 14.574 20.16H5.69623C2.54975 20.16 0 17.4309 0 14.0635V13.9552C0 13.8656 0.0682465 13.7928 0.152239 13.7928H5.10124C5.19924 13.7928 5.27101 13.8899 5.26226 13.9925C5.22725 14.336 5.28675 14.6869 5.43899 15.0061C5.73298 15.6427 6.34202 16.0403 6.99999 16.0403H9.45V14H7.028C6.90373 14 6.83026 13.8469 6.90199 13.7387C6.92826 13.6957 6.95801 13.6509 6.9895 13.6005C7.21873 13.2533 7.546 12.7139 7.87148 12.0997C8.09375 11.6853 8.30901 11.2429 8.48225 10.7987C8.51726 10.7184 8.54524 10.6363 8.57325 10.556C8.62049 10.4141 8.6695 10.2816 8.70448 10.1491C8.73949 10.0371 8.7675 9.91947 8.79551 9.80933C8.87776 9.43227 8.91274 9.0328 8.91274 8.61839C8.91274 8.456 8.90574 8.28614 8.89173 8.12372C8.88476 7.94639 8.86376 7.76906 8.84275 7.59173C8.82874 7.43492 8.80251 7.28 8.7745 7.11761C8.73949 6.88053 8.69051 6.64535 8.63449 6.40827L8.61526 6.31867C8.57325 6.15629 8.53823 6.00133 8.48925 5.83894C8.35098 5.32933 8.19174 4.8328 8.02376 4.368C7.96251 4.1832 7.89249 4.00588 7.8225 3.82855C7.71924 3.56159 7.61424 3.31894 7.51798 3.08933C7.46901 2.9848 7.42699 2.88959 7.38501 2.79253C7.33774 2.68239 7.28876 2.57229 7.23974 2.46771C7.20476 2.38745 7.16449 2.3128 7.13648 2.23814L6.83727 1.64827C6.79525 1.568 6.86524 1.4728 6.94749 1.49706L8.82 2.03841H8.82526C8.82874 2.03841 8.83049 2.04027 8.83226 2.04027L9.07898 2.11306L9.35026 2.19518L9.45 2.22506V1.03788C9.45 0.464796 9.88048 0 10.4125 0C10.6785 0 10.92 0.115714 11.0932 0.304265C11.2665 0.492816 11.375 0.750408 11.375 1.03788V2.8L11.5745 2.85971C11.5902 2.86533 11.606 2.8728 11.62 2.88398C11.669 2.92318 11.739 2.98108 11.8282 3.05198C11.8982 3.11173 11.9735 3.18453 12.0645 3.25918C12.2448 3.41414 12.46 3.61388 12.6963 3.84345C12.7592 3.90135 12.8205 3.96106 12.8765 4.02082C13.181 4.32318 13.5223 4.67788 13.8477 5.06988C13.9387 5.17998 14.028 5.29198 14.119 5.40959C14.21 5.52906 14.3062 5.64667 14.3903 5.76429C14.5005 5.92106 14.6195 6.08345 14.7228 6.25335C14.7717 6.33361 14.8278 6.41573 14.875 6.496C15.008 6.71067 15.1253 6.93282 15.2373 7.15492C15.2845 7.25759 15.3335 7.36959 15.3755 7.47973C15.4997 7.77653 15.5978 8.07894 15.6607 8.38135C15.68 8.44667 15.694 8.51761 15.701 8.58108V8.59598C15.722 8.68561 15.729 8.78082 15.736 8.87788C15.764 9.18772 15.75 9.49759 15.687 9.80933C15.6607 9.94188 15.6257 10.0669 15.5838 10.1995C15.5417 10.3264 15.4997 10.4589 15.4455 10.584C15.3405 10.8434 15.2163 11.1029 15.0692 11.3456C15.022 11.4352 14.966 11.5304 14.91 11.62C14.8488 11.7152 14.7857 11.8048 14.7298 11.8926C14.6528 12.0046 14.5705 12.1221 14.4865 12.2267C14.4112 12.3368 14.3342 12.4469 14.2502 12.544C14.133 12.6915 14.021 12.8315 13.9038 12.9659C13.8337 13.0536 13.7585 13.1432 13.6815 13.2235C13.6062 13.3131 13.5293 13.3933 13.4592 13.468C13.342 13.5931 13.244 13.6901 13.1618 13.7704L12.9692 13.9589C12.9412 13.9851 12.9045 14 12.866 14H11.375V16.0403H13.251C13.671 16.0403 14.07 15.8816 14.392 15.5904C14.5022 15.4877 14.9835 15.0435 15.5523 14.3733C15.5715 14.3509 15.596 14.3341 15.624 14.3267L20.8057 12.7288C20.902 12.6989 21 12.7773 21 12.8856Z"
+                  fill="white" />
+              </svg>
+            </div>
+            <div class="bottom-box"></div>
+          </a>-->
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <!-- Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"
+    integrity="sha512-H6cPm97FAsgIKmlBA4s774vqoN24V5gSQL4yBTDOY2su2DeXZVhQPxFK4P6GPdnZqM9fg1G3cMv5wD7e6cFLZQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"
+    integrity="sha512-5efjkDjhldlK+BrHauVYJpbjKrtNemLZksZWxd6Wdxvm06dceqWGLLNjZywOkvW7BF032ktHRMUOarbK9d60bg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdn.rawgit.com/coderitual/odoo/feature/codevember16/lib/odoo.js"></script>
+
+  <!-- Slick slider -->
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script>
+    $("#nfts").slick({
+      infinite: true,
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      dots: false,
+      prevArrow: false,
+      nextArrow: false,
+      autoplay: true,
+      autoplaySpeed: 700,
+      pauseOnHover: false,
+      pauseOnFocus: false,
+      focusOnSelect: false,
+      responsive: [
+        {
+          breakpoint: 992,
+          settings: {
+            slidesToShow: 3,
+          },
+        },
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 2,
+          },
+        },
+        {
+          breakpoint: 576,
+          settings: {
+            slidesToShow: 1,
+          },
+        },
+        // You can unslick at a given breakpoint now by adding:
+        // settings: "unslick"
+        // instead of a settings object
+      ],
+    });
+  </script>
+
+  <!-- Custom js -->
+
+  <!-- <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script> -->
+
+  <!-- <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script> -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/velocity/1.2.2/velocity.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/velocity/1.2.2/velocity.ui.min.js"></script>
+  <script src="script.js"></script>
+  <script>
+    let preloader = document.getElementById("loading");
+    function onLoad() {
+      preloader.style.display = "none";
+    }
+  </script>
+</body>
+
+</html>

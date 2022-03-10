@@ -1,0 +1,149 @@
+// body [data-aos-delay='8000'][data-aos].aos-animate,
+// [data-aos][data-aos][data-aos-delay='8000'].aos-animate {
+//     transition-delay: 8s;
+// }
+
+// .about-text-bg{
+//   background-color: lawngreen;
+//   height: 100vh;
+
+// }
+
+.line1 {
+  .line2 {
+    white-space: nowrap;
+    font-family: pro;
+  }
+  // position: fixed;
+  // top: 500px;
+  // left: 50px;
+}
+
+.about-bg {
+  background-color: rgba(252, 252, 252, 1);
+  // background-image: url('/img/PARALLAXIMAGE.jpg');
+  // background-image: url("../img/about-bg.png");
+  .extra-video-wrapper {
+    display: flex;
+    align-items: center;
+  }
+
+  .about-heading {
+    font-size: 3rem;
+  }
+  video {
+    position: relative;
+    right: 410px;
+    transform: scale(1.2);
+  }
+}
+
+.about-div1 {
+  text-align: center;
+  font-size: 45px;
+  font-weight: 900;
+  color: black;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  padding-top: 100px;
+}
+
+.about-text {
+  // padding-left: 3px;
+  padding: 5% 5%;
+  text-align: left;
+}
+
+.about-para {
+  padding: 5% 0;
+  text-align: left;
+  // padding-left: 3px;
+  font-size: 1.2rem;
+  color: black;
+  // padding-top: 100px;
+  // padding: 100px;
+}
+
+.about-bg {
+  video {
+    width: 300px;
+  }
+}
+
+.make-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 600px) {
+  .about-bg {
+    overflow-x: hidden;
+  }
+
+  .about-text {
+    padding: 20px 30px;
+  }
+  #fish-vid {
+    // right: 180px;
+    transform: scale(0.8);
+    // display: none;
+  }
+
+  #pyramid-img {
+    display: none;
+  }
+
+  .about_text {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .hr-1,
+  .hr-2 {
+    display: none;
+  }
+
+  .mobile-hr {
+    position: relative;
+    z-index: 1;
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    border-bottom: 0;
+    border-top: 0;
+    width: 35%;
+    height: 100%;
+    position: absolute;
+
+    // position: relative;
+    // top: 400px;
+    // transform: scaleY(-200px);
+  }
+}
+
+@media screen and (max-width: 950px) and (min-width: 600px) {
+  .about-bg {
+    overflow-x: hidden;
+  }
+
+  .hr-1,
+  .hr-2 {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .mobile-hr {
+    display: none;
+  }
+}
+
+.navdiv {
+  padding-left: 100px;
+}
+
+// @media screen and (min-width : 1000px){
+//   .about-bg{
+//     height: 75vh;
+//   }
+// }

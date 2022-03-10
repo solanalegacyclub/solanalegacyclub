@@ -1,0 +1,152 @@
+@import "./varaibles";
+@import "./fonts";
+@import "./hero_section";
+@import "./about";
+@import "./creators";
+@import "./formula";
+@import "./nfts";
+@import "./faq";
+@import "./navbar";
+@import "./roadmap";
+@import "./footer";
+
+// Global Styles
+
+// TODO
+// 1. Fish rectangle
+// 2. Later 25% trigger to odometer
+// 3. 12121
+// 4.Morse code to the roadmap
+// 5. Doublt the text sizze and increase the card width (25%) in roadmap
+// 6. Replace faq answers
+// Make all headings same as roadmap
+// FOnt size in paragraphs should be 2x
+// bg for about
+// update the favicon
+
+// PRELOADER
+#loading {
+  position: fixed;
+
+  width: 100%;
+  height: 100vh;
+  background: #000000 url("../img/Loader.gif") no-repeat center;
+  background-size: 75px 75px;
+  z-index: 9999;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  font-family: Outfit, sans-serif;
+  overflow-x: hidden;
+}
+
+main {
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.sm-links {
+  // background-color: aqua;
+  // min-width: 10%;
+}
+
+.top-box {
+  background-color: $black;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid white;
+  z-index: 2;
+  transition-duration: 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bottom-box {
+  border: 2px solid white;
+  // border-right: 0;
+  border-radius: 8px;
+  height: 48px;
+  width: 50px;
+  position: relative;
+  top: 4px;
+  right: 52px;
+  z-index: 1;
+  transition-duration: 0.3s;
+  // visibility: hidden;
+}
+
+// .opensea{
+//   padding: 10px 11px;
+// }
+
+
+
+.sm-link-btn {
+  transition-duration: 0.3s;
+  padding: 0;
+  margin: 0;
+  max-width: 100px;
+}
+
+.sm-link-btn:hover .bottom-box {
+  visibility: visible;
+  cursor: pointer;
+}
+
+.sm-link-btn:hover .top-box {
+  transform: translate(+0.23rem, -0.23rem);
+  cursor: pointer;
+}
+
+.sm-link-btn:hover .discord {
+  background: #5865f2;
+  cursor: url("data:image/svg+xml;utf-8, <svg xmlns = 'http://www.w3.org/2000/svg' width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px'><text y='50%'>🔒</text></svg>"),
+    auto;
+}
+
+.sm-link-btn:hover .twitter {
+  background: #00acee;
+}
+
+.sm-link-btn:hover .instagram {
+  background: #e1306c;
+}
+
+.sm-link-btn:hover .opensea {
+  background: #2081e2;
+}
+
+.top-box svg {
+  transform: scale(0.9);
+}
+
+// .sm-link-btn:hover .top-box svg{
+//   // background-color: aqua;
+//   // filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%);
+//   filter: invert(100%) sepia(0%) saturate(8%) hue-rotate(197deg) brightness(96%) contrast(103%);
+// }
+
+@media screen and (max-width: 600px) {
+  html {
+    width: 100vw;
+  }
+  body {
+    width: 100%;
+  }
+
+  // .navbar-brand{
+  //   background-color: lightblue;
+  //   font-size: 0.8rem;
+  //   width: 30%;
+  // }
+}
